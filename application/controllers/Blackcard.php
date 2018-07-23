@@ -27,8 +27,11 @@ class Blackcard extends CI_Controller {
 
 	public function index()
 	{
-
-		$this->load->view('blackcard');
+		if($this->session->userdata('login_status')){
+			$this->load->view('blackcard');
+		}else {
+			redirect("blackcard/login");
+		}
 	}
 
 	public function login(){
@@ -72,4 +75,9 @@ class Blackcard extends CI_Controller {
 		}
 	}
 
+	public function logout(){
+		if($this->blackcard_model->logout()){
+			redirect("blackcard/login");
+		}
+	}
 }

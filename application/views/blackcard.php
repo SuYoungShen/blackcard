@@ -93,7 +93,7 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <label for="exampleInputEmail1">手機號碼</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入手機號碼">
+                    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="請輸入手機號碼">
                   </div>
                   <div class="col-lg-4">
                     <label for="exampleInputPassword1">密碼</label>
@@ -113,7 +113,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success mr-auto">更新</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">登出</button>
+            <a href="logout"><button type="button" class="btn btn-danger">登出</button></a>
           </div>
         </div>
       </div>

@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['login'] = 'blackcard/login';
+$route['logout'] = 'blackcard/logout';
+
 $route['test'] = 'blackcard/test';
 
 $route['default_controller'] = 'blackcard';

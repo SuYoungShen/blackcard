@@ -1,0 +1,94 @@
+header.masthead .intro-text .intro-lead-in, header.masthead .intro-text .intro-heading{
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: bold;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border-color: #ffd400;
+  color: #000;
+}
+.tab .tab-content{
+  border-top: 3px solid #ffd400;
+  border-bottom: 3px solid #ffd400;
+}
+.tab .tab-content:before{
+  border-top: 25px solid #ffd400;
+}
+.tab .tab-content:after{
+  border-bottom: 25px solid #ffd400;
+}
+.tab .nav-tabs li a{
+  border-top: 3px solid #fff;
+  border-bottom:  3px solid #fff;
+  background: #DDC595;
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+.tab .nav-tabs li a:before{
+  border-top: 3px solid #ffd400;
+}
+.tab .nav-tabs li.active a, .tab .nav-tabs li a:hover{
+  border-top: 3px solid #ffd400;
+  border-bottom: 3px solid #ffd400;
+  background: #fff;
+  color: #000;
+}
+.tab .nav-tabs li a:hover:before,
+.tab .nav-tabs li.active a:before{ left: 0; }
+.tab .nav-tabs li a:after{
+  border-bottom: 15px solid #ffd400;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+  font-size: 100%;
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: bold;
+}
+section {
+  background-image: url('../img/bg.jpg');
+}
+section h2.section-heading{
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  color: #DDC595 !important;
+}
+section h3.section-subheading{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: unset;
+  line-height: 1.7;
+}
+section#contact .section-heading{
+  color: #ffc107;
+  font-weight: bold;
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+#portfolio .portfolio-item .portfolio-caption p{
+  font-style: unset;
+}
+#portfolio .portfolio-item .portfolio-caption{
+  background-color: black;
+  color: white;
+}
+.service-heading{
+  color: white;
+}
+.text-muted{
+  color: white !important;
+}
+.btn-primary{
+  color: #000;
+}
+.bg-light{
+  background-color: #000 !important;
+}
+.card{
+  background-color: #000;
+}
+.card-title{
+  color: #DDC595 !important;
+}
+.card-text{
+  color: white;
+}
+footer{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}

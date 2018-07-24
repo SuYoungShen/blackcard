@@ -54,6 +54,8 @@ $route['login'] = 'blackcard/login';
 $route['logout'] = 'blackcard/logout';
 
 $route['test'] = 'blackcard/test';
+$route['update'] = 'api/update';
+$route['mail'] = 'api/mail';
 
 $route['default_controller'] = 'blackcard';
 $route['404_override'] = '';

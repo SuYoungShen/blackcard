@@ -25,6 +25,8 @@
     <!-- 自訂css -->
     <link href="assets/blackcard/css/custom.css" rel="stylesheet">
     <link href="assets/blackcard/css/customs.css" rel="stylesheet">
+    <!-- 彈跳視窗 -->
+    <link href="assets/blackcard/css/sweetalert2.css" rel="stylesheet" >
     <!-- 自訂script  -->
     <script type="text/javascript" src="assets/blackcard/js/custom.js"></script>
 
@@ -33,7 +35,7 @@
   	<!-- <link rel="stylesheet" href="tabs/css/style.css"> -->
 
     <!-- 標籤logo -->
-    <link rel="icon" href="assets/blackcard/img/logos/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/blackcard/img/logos/logo2.png" type="image/x-icon">
 
   </head>
 
@@ -69,7 +71,7 @@
 
             <?php if ($this->session->userdata('login_status')) { ?>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#exampleModalCenter">會員中心</a>
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#m_enter">會員中心</a>
             </li>
             <?php } ?>
           </ul>
@@ -78,43 +80,40 @@
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="m_enter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">會員資料!</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">會員資料</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post">
               <div class="form-group">
                 <div class="row">
                   <div class="col-lg-4">
-                    <label for="exampleInputEmail1">手機號碼</label>
-                    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="請輸入手機號碼">
+                    <label for="phone">手機號碼</label>
+                    <input type="hidden" name="rule" value="update">
+                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="emailHelp" placeholder="請輸入手機號碼" value="<?=$data->phone;?>" readonly>
                   </div>
                   <div class="col-lg-4">
-                    <label for="exampleInputPassword1">密碼</label>
-                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                    <label for="password">密碼</label>
+                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼" required="required">
                   </div>
                   <div class="col-lg-4">
-                    <label for="exampleInputPassword1">重新密碼</label>
-                    <input type="password" class="form-control" id="re-password" placeholder="請重新輸入密碼">
+                    <label for="re-password">重新密碼</label>
+                    <input type="password" class="form-control" id="re-password" placeholder="請重新輸入密碼" required="required">
                   </div>
                 </div>
-
               </div>
-              <div class="form-group">
-              </div>
-
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success mr-auto">更新</button>
-            <a href="logout"><button type="button" class="btn btn-danger">登出</button></a>
-          </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success mr-auto" id="update">更新</button>
+              <a href="logout"><button type="button" class="btn btn-danger">登出</button></a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -551,19 +550,19 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" method="post" name="sentMessage" novalidate="novalidate">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="您的姓名 *" required="required" data-validation-required-message="此為必填，請輸入姓名!!!">
+                    <input class="form-control" id="name" type="text" value="<?=$this->session->userdata('login_name');?>" placeholder="您的姓名 *" required="required" data-validation-required-message="此為必填，請輸入姓名!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="您的信箱 *" required="required" data-validation-required-message="此為必填，請輸入信箱!!!">
+                    <input class="form-control" id="email" type="email" value="<?=$this->session->userdata('login_email');?>" placeholder="您的信箱 *" required="required" data-validation-required-message="此為必填，請輸入信箱!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="您的電話 *" required="required" data-validation-required-message="此為必填，請輸入電話號碼!!!">
+                    <input class="form-control" id="c_phone" type="tel" value="<?=$this->session->userdata('login_phone');?>" placeholder="您的電話 *" required="required" data-validation-required-message="此為必填，請輸入電話號碼!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -610,7 +609,54 @@
 
     <!-- Custom scripts for this template -->
     <script src="assets/blackcard/js/agency.min.js"></script>
+    <!-- 彈跳視窗 -->
+    <script type="text/javascript" src="assets/blackcard/js/sweetalert2.js"></script>
 
+    <script type="text/javascript">
+      var pwd = $("#password");
+      var re_pwd = $("#re-password");
+      $("#update").click(function(event) {
+        if ($(pwd).val() != $(re_pwd).val()) {
+          swal({
+            title: "注意!",
+            text: "兩者密碼不相同，請重新輸入",
+            type: "error",
+            confirmButtonColor: '#d33',
+          });
+          return false;
+        }else{
+          $.ajax({
+            url: 'update',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+              pwd: $(pwd).val()
+            }
+          })
+          .done(function(ResOk) {
+            if(ResOk.code == 200){
+              swals("success", ResOk.msg)
+            }
+          })
+          .fail(function(ResError) {
+            console.log(ResError);
+          });
+        }
+      });
+
+      function swals(status, msg){
+        swal({
+          text: msg,
+          type: status,
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: '太棒了!!!'
+        }).then((result) => {
+          if (result.value) {
+            document.location.href = "./logout";
+          }
+        });
+      }
+    </script>
   </body>
 
 </html>

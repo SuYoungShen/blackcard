@@ -19,65 +19,71 @@ class Blackcard extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	 public function __construct()
-	 {
+	 public function __construct(){
+
 		 parent::__construct();
 		 $this->load->model(array('blackcard_model'));
 	 }
 
-	public function index()
-	{
-		if($this->session->userdata('login_status')){
-			$this->load->view('blackcard');
-		}else {
-			redirect("blackcard/login");
-		}
-	}
+	 public function index(){
 
-	public function login(){
-		$view_data = array(
-			"title" => "卡片登入"
-		);
-		if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
-			if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){
-				$user = $this->input->post('username'); // 帳號
-				$pwd = $this->input->post('password'); // 密碼
-				if($this->blackcard_model->chk_login($user, $pwd)){
+		 if($this->session->userdata('login_status')){
+			 $id = $this->session->userdata("login_id");
+			 $where = "id=".'"'.$id.'"';
+			 $view_data["data"] = $this->blackcard_model->get_once("member", $where);
+			 $this->load->view("blackcard", $view_data);
 
-					if($this->blackcard_model->do_login($user)){
-						$in_out_data = array();
+		 }else {
+			 redirect("blackcard/login");
+		 }
+	 }
 
-						$in_out_date_column = array('login_date', 'login_time');
-						$where = "id ="."'".$this->session->userdata('login_id')."'";
-						if($this->blackcard_model->updates('member', $in_out_data, $in_out_date_column, $where)){
-							redirect("blackcard");
-						}else {
-							$view_data["code"] = 404;
-							$view_data["msg"] = "更新失敗，請重新登入!!!";
-							$this->load->view('login', $view_data);
-						}
-					}else {
-						$view_data["code"] = 404;
-						$view_data["msg"] = "登入失敗，請重新登入!!!";
-					}
-				}else {
-					$view_data["code"] = 404;
-					$view_data["msg"] = "帳號或密碼錯誤!!!";
-					$this->load->view('login', $view_data);
-				}
-			}else {
-				$view_data["code"] = 404;
-				$view_data["msg"] = "帳號或密碼不得為空!!!";
-				$this->load->view('login', $view_data);
-			}
-		}else {
-			$this->load->view('login', $view_data);
-		}
-	}
+	 public function login(){
 
-	public function logout(){
-		if($this->blackcard_model->logout()){
-			redirect("blackcard/login");
-		}
-	}
+		 $view_data = array(
+			 "title" => "卡片登入"
+		 );
+		 if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
+			 if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){
+				 $user = $this->input->post('username'); // 帳號
+				 $pwd = $this->input->post('password'); // 密碼
+
+				 if($this->blackcard_model->chk_login($user, $pwd)){ // 檢查是否有這人存在
+
+					 if($this->blackcard_model->do_login($user)){
+						 $data = array();
+
+						 $date = array('login_date', 'login_time');
+						 $where = "id ="."'".$this->session->userdata('login_id')."'";
+						 if($this->blackcard_model->updates('member', $data, $date, $where)){
+							 redirect("blackcard");
+						 }else {
+							 $view_data["code"] = 404;
+							 $view_data["msg"] = "更新失敗，請重新登入!!!";
+							 $this->load->view('login', $view_data);
+						 }
+					 }else {
+						 $view_data["code"] = 404;
+						 $view_data["msg"] = "登入失敗，請重新登入!!!";
+					 }
+				 }else {
+					 $view_data["code"] = 404;
+					 $view_data["msg"] = "帳號或密碼錯誤!!!";
+					 $this->load->view('login', $view_data);
+				 }
+			 }else {
+				 $view_data["code"] = 404;
+				 $view_data["msg"] = "帳號或密碼不得為空!!!";
+				 $this->load->view('login', $view_data);
+			 }
+		 }else {
+			 $this->load->view('login', $view_data);
+		 }
+	 }
+
+	 public function logout(){
+		 if($this->blackcard_model->logout()){
+			 redirect("blackcard/login");
+		 }
+	 }
 }

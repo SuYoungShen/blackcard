@@ -17,14 +17,6 @@ class Blackcard_model extends CI_Model {
     return $this->db->get_where($table, $where)->num_rows();//有資料會大於0
   }
 
-  //更新資料，$table=資料表；$data=資料；$date=日期欄位
-  public function update($table, $data, $date, $where){
-    $date = $this->date($date);
-    $data = array_merge($data, $date);//array_merge=類似array_push，差別於merge可加key
-    $this->db->where($where);
-    return $this->db->update($table, $data);
-  }
-
   // 確認員工信箱密碼是否存在
   public function chk_login($phone, $pwd) {
     $this->db->where('phone', $phone);
@@ -47,6 +39,8 @@ class Blackcard_model extends CI_Model {
     $session_arr = array(
       'login_id'=> $data->id,
       'login_name'=> $data->ch_name,
+      'login_email' => $data->email,
+      'login_phone' => $data->phone,
       'login_status'=> true
     );
 
@@ -65,6 +59,8 @@ class Blackcard_model extends CI_Model {
   public function logout() {
     $this->session->unset_userdata('login_id');
     $this->session->unset_userdata('login_name');
+    $this->session->unset_userdata('login_email');
+    $this->session->unset_userdata('login_phone');
     $this->session->unset_userdata('login_status');
     return true;
   }

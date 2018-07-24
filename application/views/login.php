@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="assets/login/images/icons/favicon.ico"/>
+	<link rel="icon" href="assets/blackcard/img/logos/logo2.png" type="image/x-icon">	
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -30,11 +30,12 @@
 <body>
 
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('assets/login/images/bg-01.jpg');">
+		<div class="container-login100" style="background-image: url('assets/blackcard/img/header-bg.jpg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method="post">
 					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
+						<img src="./assets/blackcard/img/logos/logo2.png" class="img-fluid" alt="">
+						<!-- <i class="zmdi zmdi-landscape"></i> -->
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">

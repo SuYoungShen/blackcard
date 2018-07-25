@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" href="assets/blackcard/img/logos/logo2.png" type="image/x-icon">	
+	<link rel="icon" href="assets/blackcard/img/logos/logo2.png" type="image/x-icon">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -26,6 +26,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="assets/login/css/main.css">
 <!--===============================================================================================-->
+	<!-- 自訂css  -->
+	<link rel="stylesheet" type="text/css" href="assets/login/css/custom.css">
+
 </head>
 <body>
 

@@ -1,0 +1,18 @@
+.container-login100::before {
+  background-image: url('../../blackcard/img/bg.jpg');
+}
+.wrap-login100 {
+  background: -webkit-linear-gradient(top, #f9f9ef, #005d8c66);
+}
+.login100-form-logo {
+  background-color: #fff0;
+}
+.login100-form-title {
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+.login100-form-btn {
+  font-family: 'Microsoft JhengHei', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: bold;
+  color: #000;
+
+}

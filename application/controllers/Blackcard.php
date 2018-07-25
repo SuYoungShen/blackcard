@@ -41,7 +41,7 @@ class Blackcard extends CI_Controller {
 	 public function login(){
 
 		 $view_data = array(
-			 "title" => "卡片登入"
+			 "title" => "會員登入"
 		 );
 		 if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
 			 if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){

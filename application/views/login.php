@@ -52,7 +52,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="密碼為必填">
-						<input class="input100" type="password" name="password" placeholder="請輸入帳號">
+						<input class="input100" type="password" name="password" placeholder="請輸入密碼">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
@@ -60,8 +60,12 @@
 						<button class="login100-form-btn">
 							登入
 						</button>
+						<button type="button" class="english" name="button">
+							<a href="#">English</a>
+						</button>
+						<!-- <button class="login100-form-btn"> -->
+						<!-- </button> -->
 					</div>
-
 				</form>
 			</div>
 		</div>

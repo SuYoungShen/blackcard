@@ -96,6 +96,21 @@ class Blackcard extends CI_Controller {
 		 }
 	 }
 // 英文版
+	public function en_index(){
+		$view_data = array(
+			"title" => "WanWanTon TCI"
+		);
+		if($this->session->userdata('login_status')){
+			$id = $this->session->userdata("login_id");
+			$where = "id=".'"'.$id.'"';
+			$view_data["data"] = $this->blackcard_model->get_once("member", $where);
+			$this->load->view("en_blackcard", $view_data);
+
+		}else {
+			redirect("blackcard/en_login");
+		}
+	}
+
 	 public function en_login(){
 
 		 $view_data = array(
@@ -144,21 +159,6 @@ class Blackcard extends CI_Controller {
 		 }else {
 			 $this->load->view('en_login', $view_data);
 		 }
-	 }
-
-	 public function en_index(){
-	 	$view_data = array(
-	 		"title" => "WanWanTon TCI"
-	 	);
-	 	if($this->session->userdata('login_status')){
-	 		$id = $this->session->userdata("login_id");
-	 		$where = "id=".'"'.$id.'"';
-	 		$view_data["data"] = $this->blackcard_model->get_once("member", $where);
-	 		$this->load->view("en_blackcard", $view_data);
-
-	 	}else {
-	 		redirect("blackcard/login");
-	 	}
 	 }
 
 	 public function en_logout(){

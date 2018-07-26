@@ -126,7 +126,7 @@
             <div class="intro-heading text-uppercase">Welcome</div>
             <div class="intro-lead-in"><?=$title;?></div>
             <!-- <div class="intro-heading text-uppercase">歡迎來到旺旺通國際有限公司</div> -->
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Detailed Introduction</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Introduction</a>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@
             <h4 class="service-heading">Premium travel offer </h4>
             <p class="text-muted">The exclusive travel card offers you a variety of benefits including 24/7 travel consultants, exclusive offers and amenities, and special promotions to enhance your travel experience to another level.</p>
 
-            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">understand more</a></p>
+            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">MORE</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -161,7 +161,7 @@
             </span>
             <h4 class="service-heading">Priceless City®</h4>
             <p class="text-muted">With the city's beauty, World Elite Mastercard is your best credit card for a unique travel experience with exclusive offers for you, including VIP events, special promotions and more.</p>
-            <p><a href="https://www.priceless.com/" target="_blank">understand more</a></p>
+            <p><a href="https://www.priceless.com/" target="_blank">MORE</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">

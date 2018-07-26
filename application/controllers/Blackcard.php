@@ -50,7 +50,7 @@ class Blackcard extends CI_Controller {
 			 "pr" => "密碼必填",
 			 "button" => "登入",
 			 "en_url" => "en_login",
-			 "lan" => "英文"
+			 "lan" => "English"
 		 );
 		 if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
 			 if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){

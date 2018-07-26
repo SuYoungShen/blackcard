@@ -151,7 +151,7 @@
             <h4 class="service-heading">尊貴旅遊優惠 </h4>
             <p class="text-muted">獨家旅遊卡為您提供的種種禮遇包括，全天候旅遊顧問、尊貴優惠和設施及特別推廣等全球貴賓活動，讓您的旅遊體驗提升至另一層次。</p>
 
-            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">了解更多</a></p>
+            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank"><b>了解更多</b></a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -161,7 +161,7 @@
             </span>
             <h4 class="service-heading">無價城市®</h4>
             <p class="text-muted">盡享城市美麗景緻，World Elite Mastercard是您最佳信用卡，為您展開獨特旅遊體驗，提供各項為您精心準備的獨家優惠，包括貴賓活動、特別推廣及更多。</p>
-            <p><a href="https://www.priceless.com/" target="_blank">了解更多</a></p>
+            <p><a href="https://www.priceless.com/" target="_blank"><b>了解更多</b></a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -182,7 +182,11 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">黑卡相關內容</h2>
-            <h3 class="section-subheading text-white">年費US$1500，開卡（激活）費用US$500，第一年總共US$2000，第二年開始皆為US$1500</p><a href="#">點我申請卡片</h3>
+            <h3 class="section-subheading text-white">
+              年費US$1500，開卡（激活）費用US$500，第一年總共US$2000，第二年開始皆為US$1500<br />
+              <a href="assets/blackcard/file/hallmark-mastercard-application.pdf" download>申請卡片</a>｜
+              <a href="assets/blackcard/file/hallmark-mastercard-example.pdf" download>申請書範例</a>
+            </h3>
           </div>
         </div>
         <div class="row">
@@ -246,7 +250,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-xl-12">
 
             <div class="tab" role="tabpanel">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -256,7 +260,7 @@
                 </li>
                 <!-- 特別優惠 sp = special promotion -->
 
-                <!--  機場禮賓服務 acs = Airport concierge service -->
+                <!-- 機場禮賓服務 acs = Airport concierge service -->
                 <li class="nav-item">
                   <a class="nav-link" id="acs-tab" data-toggle="tab" href="#acs" role="tab" aria-controls="acs" aria-selected="false">機場禮賓服務</a>
                 </li>

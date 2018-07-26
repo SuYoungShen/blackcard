@@ -94,7 +94,7 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-lg-4">
-                    <label for="phone">Phone</label>
+                    <label for="phone">Mobile Phone No.</label>
                     <input type="hidden" name="rule" value="update">
                     <input type="text" class="form-control" id="phone" name="phone" aria-describedby="emailHelp" placeholder="Please enter the phone number" value="<?=$data->phone;?>" readonly>
                   </div>
@@ -151,7 +151,7 @@
             <h4 class="service-heading">Premium travel offer </h4>
             <p class="text-muted">The exclusive travel card offers you a variety of benefits including 24/7 travel consultants, exclusive offers and amenities, and special promotions to enhance your travel experience to another level.</p>
 
-            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">MORE</a></p>
+            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank"><b>MORE</b></a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -161,7 +161,7 @@
             </span>
             <h4 class="service-heading">Priceless City®</h4>
             <p class="text-muted">With the city's beauty, World Elite Mastercard is your best credit card for a unique travel experience with exclusive offers for you, including VIP events, special promotions and more.</p>
-            <p><a href="https://www.priceless.com/" target="_blank">MORE</a></p>
+            <p><a href="https://www.priceless.com/" target="_blank"><b>MORE</b></a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -182,7 +182,11 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">BLACK CARD RELATED CONTENT</h2>
-            <h3 class="section-subheading text-white">The annual fee is US$1500, the card opening (activation) costs US$500, the first year is US$2000, and the second year starts with US$1500.</p><a href="#">Click me to apply for a card</h3>
+            <h3 class="section-subheading text-white">
+              The annual fee is US$1500, the card opening (activation) costs US$500, the first year is US$2000, and the second year starts with US$1500. <br />
+              <a href="assets/blackcard/file/hallmark-mastercard-application.pdf" download>Application Card</a>｜
+              <a href="assets/blackcard/file/hallmark-mastercard-example.pdf" download>Application Example</a>
+            </h3>
           </div>
         </div>
         <div class="row">

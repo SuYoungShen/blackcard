@@ -48,30 +48,30 @@
           <img src="assets/blackcard/img/logos/logo.png" class="img-fluid" alt="">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          選單
+          MENU
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">獨享優惠</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Exclusive offer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">相關內容</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Related Information</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">探索世界</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Explore The Word</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#leisurely">悠然無憂</a>
+              <a class="nav-link js-scroll-trigger" href="#leisurely">Leisurely</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">聯繫我們</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
             </li>
 
             <?php if ($this->session->userdata('login_status')) { ?>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#m_enter">會員中心</a>
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#m_enter">Member Centre</a>
             </li>
             <?php } ?>
           </ul>
@@ -84,7 +84,7 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">會員資料</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">Member Profile</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -94,24 +94,24 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-lg-4">
-                    <label for="phone">手機號碼</label>
+                    <label for="phone">Phone</label>
                     <input type="hidden" name="rule" value="update">
-                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="emailHelp" placeholder="請輸入手機號碼" value="<?=$data->phone;?>" readonly>
+                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="emailHelp" placeholder="Please enter the phone number" value="<?=$data->phone;?>" readonly>
                   </div>
                   <div class="col-lg-4">
-                    <label for="password">密碼</label>
-                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼" required="required">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Please enter your password" required="required">
                   </div>
                   <div class="col-lg-4">
-                    <label for="re-password">重新密碼</label>
-                    <input type="password" class="form-control" id="re-password" placeholder="請重新輸入密碼" required="required">
+                    <label for="re-password">Re-Password</label>
+                    <input type="password" class="form-control" id="re-password" placeholder="Please re-enter your password" required="required">
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success mr-auto" id="update">更新</button>
-              <a href="logout"><button type="button" class="btn btn-danger">登出</button></a>
+              <button type="button" class="btn btn-success mr-auto" id="update">Update</button>
+              <a href="en_logout"><button type="button" class="btn btn-danger">Sign out</button></a>
             </div>
           </form>
         </div>
@@ -126,7 +126,7 @@
             <div class="intro-heading text-uppercase">Welcome</div>
             <div class="intro-lead-in"><?=$title;?></div>
             <!-- <div class="intro-heading text-uppercase">歡迎來到旺旺通國際有限公司</div> -->
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">詳細介紹</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Detailed Introduction</a>
           </div>
         </div>
       </div>
@@ -137,8 +137,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">黑卡獨享優惠</h2>
-            <h3 class="section-subheading text-white">Mastercard為您度身訂造個人化的服務，令您隨時隨地都能體驗生命中最難忘時刻。</h3>
+            <h2 class="section-heading text-uppercase">BLACK CARD EXCLUSIVE OFFER</h2>
+            <h3 class="section-subheading text-white">Mastercard's tailor-made personalized service allows you to experience the most memorable moments of your life anytime, anywhere.</h3>
           </div>
         </div>
         <div class="row text-center">
@@ -148,10 +148,10 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">尊貴旅遊優惠 </h4>
-            <p class="text-muted">獨家旅遊卡為您提供的種種禮遇包括，全天候旅遊顧問、尊貴優惠和設施及特別推廣等全球貴賓活動，讓您的旅遊體驗提升至另一層次。</p>
+            <h4 class="service-heading">Premium travel offer </h4>
+            <p class="text-muted">The exclusive travel card offers you a variety of benefits including 24/7 travel consultants, exclusive offers and amenities, and special promotions to enhance your travel experience to another level.</p>
 
-            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">了解更多</a></p>
+            <p><a href="https://www1.mastercard.com//content/world-elite/apmea/en.html" target="_blank">understand more</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -159,9 +159,9 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-plane fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">無價城市®</h4>
-            <p class="text-muted">盡享城市美麗景緻，World Elite Mastercard是您最佳信用卡，為您展開獨特旅遊體驗，提供各項為您精心準備的獨家優惠，包括貴賓活動、特別推廣及更多。</p>
-            <p><a href="https://www.priceless.com/" target="_blank">了解更多</a></p>
+            <h4 class="service-heading">Priceless City®</h4>
+            <p class="text-muted">With the city's beauty, World Elite Mastercard is your best credit card for a unique travel experience with exclusive offers for you, including VIP events, special promotions and more.</p>
+            <p><a href="https://www.priceless.com/" target="_blank">understand more</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -169,8 +169,8 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-user fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">24小時禮賓服務</h4>
-            <p class="text-muted">World Elite Mastercard為您提供私人助理式的全天候禮遇服務。您需要尋找任何稀有項目或預訂心儀餐桌位置嗎？我們的禮賓服務隨時準備就緒。請致電旅遊卡背上的電話，聯繫禮賓服務單位。</p>
+            <h4 class="service-heading">24-hour concierge service</h4>
+            <p class="text-muted">The World Elite Mastercard offers a personal assistant's 24/7 courtesy service. Do you need to look for any rare items or book a favorite table location? Our concierge service is always ready. Please call the telephone number on the back of the travel card to contact the concierge.</p>
           </div>
         </div>
       </div>
@@ -181,8 +181,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">黑卡相關內容</h2>
-            <h3 class="section-subheading text-white">年費US$1500，開卡（激活）費用US$500，第一年總共US$2000，第二年開始皆為US$1500</p><a href="#">點我申請卡片</h3>
+            <h2 class="section-heading text-uppercase">BLACK CARD RELATED CONTENT</h2>
+            <h3 class="section-subheading text-white">The annual fee is US$1500, the card opening (activation) costs US$500, the first year is US$2000, and the second year starts with US$1500.</p><a href="#">Click me to apply for a card</h3>
           </div>
         </div>
         <div class="row">
@@ -197,8 +197,8 @@
               <img class="img-fluid" src="https://www.mastercard.com.hk/content/mccom-admin/zn-hk-admin/referenced-content-placeholder/related-content-consumers/_jcr_content/contentpar/related_content_item_208286941/image.adaptive.479.high.jpg/1482392812820.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>探索無價城市的精采體驗</h4>
-              <p>為所有Mastercard持卡人而設的一系列尊屬體驗。香港，從未如此看過。</p>
+              <h4>Explore the invaluable experience of priceless cities</h4>
+              <p>A range of exclusive experiences for all Mastercard cardholders. Hong Kong has never seen it like this.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -212,8 +212,8 @@
               <img class="img-fluid" src="https://www.mastercard.com.hk/content/mccom-admin/zn-hk-admin/referenced-content-placeholder/related-content-consumers/_jcr_content/contentpar/related_content_item_2063369226/image.adaptive.479.high.jpg/1481955365797.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>支付卡的好處</h4>
-              <p>您的信用卡或扣帳卡能為您節省金錢及時間。</p>
+              <h4>Benefits of payment cards</h4>
+              <p>Your credit or debit card can save you money and time.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -227,8 +227,8 @@
               <img class="img-fluid" src="https://www.mastercard.com.hk/content/mccom-admin/zn-hk-admin/referenced-content-placeholder/related-content-consumers/_jcr_content/contentpar/related_content_item_1479426001/image.adaptive.479.high.jpg/1482396096614.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>通往無價的捷徑</h4>
-              <p>隨時透過已連接網絡的裝置，使用Mastercard推出的Masterpass</p>
+              <h4>A shortcut to priceless</h4>
+              <p>Masterpass from Mastercard is available at any time via a connected device</p>
             </div>
           </div>
         </div>
@@ -240,8 +240,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">萬事達卡世界之極卡</h2>
-            <h3 class="section-subheading text-white text-center">無論您的旅程將帶您前往何處，我們24小時全年無休的旅遊顧問提供專業的服務 - 從個性化的旅行建議、機場接送、到豪華別墅和私人遊艇，將讓您的旅遊規劃更輕鬆，旅遊經歷更難忘。因此，現在就出發，重新探索世界 - 我們將隨伺在側。</h3>
+            <h2 class="section-heading text-uppercase">MASTERCARD WORLD EXTREME CARD</h2>
+            <h3 class="section-subheading text-white text-center">No matter where your trip will take you, our 24/7 travel consultants offer professional service - from personalized travel advice, airport transfers to luxury villas and private yachts, making travel planning easier The travel experience is even more memorable. So start now and re-explore the world - we will be on the sidelines.</h3>
           </div>
         </div>
 
@@ -252,43 +252,43 @@
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <!-- 特別優惠 sp = special promotion -->
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="sp-tab" data-toggle="tab" href="#sp" role="tab" aria-controls="sp" ata-toggle="tab" aria-selected="true">特別優惠</a>
+                  <a class="nav-link active" id="sp-tab" data-toggle="tab" href="#sp" role="tab" aria-controls="sp" ata-toggle="tab" aria-selected="true">SPECIAL PROMOTION</a>
                 </li>
                 <!-- 特別優惠 sp = special promotion -->
 
                 <!--  機場禮賓服務 acs = Airport concierge service -->
                 <li class="nav-item">
-                  <a class="nav-link" id="acs-tab" data-toggle="tab" href="#acs" role="tab" aria-controls="acs" aria-selected="false">機場禮賓服務</a>
+                  <a class="nav-link" id="acs-tab" data-toggle="tab" href="#acs" role="tab" aria-controls="acs" aria-selected="false">AIRPORT CONCIERGE SERVICE</a>
                 </li>
                 <!--  機場禮賓服務 acs = Airport concierge service -->
 
                 <!--  飯店與渡假村 har = Hotels and resorts -->
                 <li class="nav-item">
-                  <a class="nav-link" id="har-tab" data-toggle="tab" href="#har" role="tab" aria-controls="har" aria-selected="false">飯店與渡假村</a>
+                  <a class="nav-link" id="har-tab" data-toggle="tab" href="#har" role="tab" aria-controls="har" aria-selected="false">HOTELS AND RESORTS</a>
                 </li>
                 <!--  飯店與渡假村 har = Hotels and resorts -->
 
                 <!--  豪華租車 lcr = Luxury car rental -->
                 <li class="nav-item">
-                  <a class="nav-link" id="lcr-tab" data-toggle="tab" href="#lcr" role="tab" aria-controls="lcr" aria-selected="false">豪華租車</a>
+                  <a class="nav-link" id="lcr-tab" data-toggle="tab" href="#lcr" role="tab" aria-controls="lcr" aria-selected="false">LUXURY CAR RENTAL</a>
                 </li>
                 <!--  豪華租車 lcr = Luxury car rental -->
 
                 <!--  豪華郵輪 lc = Luxury cruise -->
                 <li class="nav-item">
-                  <a class="nav-link" id="lc-tab" data-toggle="tab" href="#lc" role="tab" aria-controls="lc" aria-selected="false">豪華郵輪</a>
+                  <a class="nav-link" id="lc-tab" data-toggle="tab" href="#lc" role="tab" aria-controls="lc" aria-selected="false">LUXURY CRUISE</a>
                 </li>
                 <!--  豪華郵輪 lc = Luxury cruise -->
 
                 <!--  精彩假期 wh = Wonderful holiday -->
                 <li class="nav-item">
-                  <a class="nav-link" id="wh-tab" data-toggle="tab" href="#wh" role="tab" aria-controls="wh" aria-selected="false">精彩假期</a>
+                  <a class="nav-link" id="wh-tab" data-toggle="tab" href="#wh" role="tab" aria-controls="wh" aria-selected="false">WONDERFUL HOLIDAY</a>
                 </li>
                 <!--  精彩假期 wh = Wonderful holiday -->
 
                 <!--  租車服務 cr = Car Rental -->
                 <li class="nav-item">
-                  <a class="nav-link" id="cr-tab" data-toggle="tab" href="#cr" role="tab" aria-controls="cr" aria-selected="false">租車服務</a>
+                  <a class="nav-link" id="cr-tab" data-toggle="tab" href="#cr" role="tab" aria-controls="cr" aria-selected="false">CAR RENTAL</a>
                 </li>
                 <!--  租車服務 cr = Car Rental -->
 
@@ -305,7 +305,7 @@
                             for(i=0; i < sp_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+sp_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+sp_title[i]+"</h5><p class='card-text'>"+sp_description[i]+"</p><a href="+sp_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+en_sp_title[i]+"</h5><p class='card-text'>"+en_sp_description[i]+"</p><a href="+sp_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                             <!-- 特別優惠 -->
@@ -326,7 +326,7 @@
                             for(i=0; i < acs_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+acs_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+acs_title[i]+"</h5><p class='card-text'>"+acs_description[i]+"</p><a href="+acs_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+en_acs_title[i]+"</h5><p class='card-text'>"+en_acs_description[i]+"</p><a href="+acs_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                           </div>
@@ -347,16 +347,16 @@
                             for(i=0; i < har_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+har_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+har_title[i]+"</h5><p class='card-text'>"+har_description[i]+"</p><a href="+har_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+har_title[i]+"</h5><p class='card-text'>"+en_har_description[i]+"</p><a href="+har_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                             <div class='col-lg-4'>
                               <div class='card'>
                                 <img src="assets/blackcard/img/more.jpg" class='img-fluid' alt=''>
                                 <div class='card-body'>
-                                  <h5 class='card-title'>更多內容</h5>
-                                  <p class='card-text'>點選詳細內容，提供更多飯店優惠。</p>
-                                  <a href="https://www1.mastercard.com/content/world-elite/taiwan/zh_tw/travel.html" class='btn btn-primary' target='_blank'>詳細內容</a>
+                                  <h5 class='card-title'>More Content</h5>
+                                  <p class='card-text'>Click on the details to provide more hotel deals.</p>
+                                  <a href="https://www1.mastercard.com/content/world-elite/taiwan/zh_tw/travel.html" class='btn btn-primary' target='_blank'>Details</a>
                                 </div>
                               </div>
                             </div>
@@ -378,7 +378,7 @@
                             for(i=0; i < lcr_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+lcr_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+lcr_title[i]+"</h5><p class='card-text'>"+lcr_description[i]+"</p><a href="+lcr_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+en_lcr_title[i]+"</h5><p class='card-text'>"+en_lcr_description[i]+"</p><a href="+lcr_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                           </div>
@@ -399,7 +399,7 @@
                             for(i=0; i < lc_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+lc_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+lc_title[i]+"</h5><p class='card-text'>"+lc_description[i]+"</p><a href="+lc_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+lc_title[i]+"</h5><p class='card-text'>"+en_lc_description[i]+"</p><a href="+lc_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                           </div>
@@ -421,7 +421,7 @@
                             for(i=0; i < wh_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+wh_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+wh_title[i]+"</h5><p class='card-text'>"+wh_description[i]+"</p><a href="+wh_url[i]+" class='btn btn-primary' target='_blank'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+en_wh_title[i]+"</h5><p class='card-text'>"+en_wh_description[i]+"</p><a href="+wh_url[i]+" class='btn btn-primary' target='_blank'>Details</a></div></div></div>");
                             }
                             </script>
                           </div>
@@ -443,7 +443,7 @@
                             for(i=0; i < cr_img.length; i++){
                               document.write("<div class='col-lg-4'><div class='card'>");
                               document.write("<img src="+cr_img[i]+" class='img-fluid' alt=''>");
-                              document.write("<div class='card-body'><h5 class='card-title'>"+cr_title[i]+"</h5><p class='card-text'>"+cr_description[i]+"</p><a href="+cr_url[i]+" class='btn btn-primary'>詳細內容</a></div></div></div>");
+                              document.write("<div class='card-body'><h5 class='card-title'>"+en_cr_title[i]+"</h5><p class='card-text'>"+en_cr_description[i]+"</p><a href="+cr_url[i]+" class='btn btn-primary'>Details</a></div></div></div>");
                             }
                             </script>
                           </div>
@@ -466,8 +466,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">悠然無憂</h2>
-            <h3 class="section-subheading text-white text-center">悠然無憂來自您知道您總是被保護著。無論您需要海外緊急醫療救助或網上購物保障，我們結合周延完整的保險，提供全年無休的服務，所以您永遠不會獨自面對挑戰。</h3>
+            <h2 class="section-heading text-uppercase">LEISURELY</h2>
+            <h3 class="section-subheading text-white text-center">Leisurely from you know that you are always protected. Whether you need overseas emergency medical assistance or online shopping protection, we offer a full year-round service in conjunction with comprehensive insurance, so you will never face the challenge alone.</h3>
           </div>
         </div>
 
@@ -480,8 +480,8 @@
 
             document.write("<div class='col-lg-4 col-xs-12'>");
             document.write("<div class='media-body'>");
-              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+ti_title[i]+"</h5></a>");
-              document.write("<p style='font-size: 15px;' class='text-white'>"+ti_description[i]+"</p>");
+              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+en_ti_title[i]+"</h5></a>");
+              document.write("<p style='font-size: 15px;' class='text-white'>"+en_ti_description[i]+"</p>");
               document.write("</div>");
             document.write("</div>");
           }
@@ -495,8 +495,8 @@
             document.write("</div>");
             document.write("<div class='col-lg-4 col-xs-12'>");
             document.write("<div class='media-body'>");
-              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+ti_title[i]+"</h5></a>");
-              document.write("<p style='font-size: 15px;' class='text-white'>"+ti_description[i]+"</p>");
+              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+en_ti_title[i]+"</h5></a>");
+              document.write("<p style='font-size: 15px;' class='text-white'>"+en_ti_description[i]+"</p>");
               document.write("</div>");
             document.write("</div>");
           }
@@ -510,8 +510,8 @@
             document.write("</div>");
             document.write("<div class='col-lg-4 col-xs-12'>");
             document.write("<div class='media-body'>");
-              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+ti_title[i]+"</h5></a>");
-              document.write("<p style='font-size: 15px;' class='text-white'>"+ti_description[i]+"</p>");
+              document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+en_ti_title[i]+"</h5></a>");
+              document.write("<p style='font-size: 15px;' class='text-white'>"+en_ti_description[i]+"</p>");
               document.write("</div>");
             document.write("</div>");
           }
@@ -527,8 +527,8 @@
                 document.write("</div>");
                 document.write("<div class='col-lg-4 col-xs-12'>");
                 document.write("<div class='media-body'>");
-                document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+ti_title[i]+"</h5></a>");
-                document.write("<p style='font-size: 15px;' class='text-white'>"+ti_description[i]+"</p>");
+                document.write("<a href="+ti_url[i]+" target='_blank'><h5 class='mt-0'>"+en_ti_title[i]+"</h5></a>");
+                document.write("<p style='font-size: 15px;' class='text-white'>"+en_ti_description[i]+"</p>");
                 document.write("</div>");
                 document.write("</div>");
               }
@@ -544,7 +544,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">聯繫我們</h2>
+            <h2 class="section-heading text-uppercase">CONTACT US</h2>
             <h3 class="section-subheading text-muted"> </h3>
           </div>
         </div>
@@ -554,28 +554,28 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" value="<?=$this->session->userdata('login_name');?>" placeholder="您的姓名 *" required="required" data-validation-required-message="此為必填，請輸入姓名!!!">
+                    <input class="form-control" id="name" type="text" value="<?=$this->session->userdata('login_name');?>" placeholder="Your Name *" required="required" data-validation-required-message="This is required, please enter your name!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" value="<?=$this->session->userdata('login_email');?>" placeholder="您的信箱 *" required="required" data-validation-required-message="此為必填，請輸入信箱!!!">
+                    <input class="form-control" id="email" type="email" value="<?=$this->session->userdata('login_email');?>" placeholder="Your Email *" required="required" data-validation-required-message="This is required, please enter the mail!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="c_phone" type="tel" value="<?=$this->session->userdata('login_phone');?>" placeholder="您的電話 *" required="required" data-validation-required-message="此為必填，請輸入電話號碼!!!">
+                    <input class="form-control" id="c_phone" type="tel" value="<?=$this->session->userdata('login_phone');?>" placeholder="Your Phone *" required="required" data-validation-required-message="This is required, please enter the phone number!!!">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="有任何問題歡迎留言 *" required="required" data-validation-required-message="此為必填，請輸入問題!!!"></textarea>
+                    <textarea class="form-control" id="message" placeholder="Have any questions, welcome to leave a message *" required="required" data-validation-required-message="This is required, please enter the question!!!"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">送出</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">SEND</button>
                 </div>
               </div>
             </form>

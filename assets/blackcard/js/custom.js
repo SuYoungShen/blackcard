@@ -63,6 +63,38 @@
     '旅遊度假產品',
     '航空優惠'
   ];
+  var en_sp_title = [
+    'Mandarin Oriental Thai Cooking Master Class, Thailand',
+    'CATHAY PACIFIC',
+    'AUSTRUAB AURKUBES',
+    'BRUSSELS AIRLINES',
+    'VILLAS OF DISTINCTION',
+    'VITESSE WORLDWIDE',
+    'SWISSAIR',
+    'SKYJET',
+    'OASIS COLLECTIONS',
+    'LUFTHANSA',
+    'AIR NEW ZEALAND',
+    'SWAIN DESTINATIONS',
+    'MONOGRAMS',
+    'ETIHAD AIRWAYS'
+  ];
+  var en_sp_description = [
+    'Half-day Thai cooking experience.',
+    'Aviation discount',
+    'Aviation discount',
+    'Aviation discount',
+    'Custom travel',
+    'Perfect luxury is undoubtedly the best way to travel.',
+    'Aviation discount',
+    'Feel the ultimate comfort and luxury of a private jet',
+    'Travel',
+    'Aviation discount',
+    'Aviation discount',
+    'Custom travel',
+    'Travel vacation products',
+    'Aviation discount'
+  ];
   //  特別優惠
 
   //  機場禮賓服務 acs = Airport concierge service
@@ -81,6 +113,14 @@
   var acs_description = [
     '在機場享受優質服務，解決您的旅行難題',
     '充分利用並享受您在機場的時間'
+  ];
+  var en_acs_title = [
+    'MasterCard Airport Concierge Service',
+    'MasterCard® Airport Experience is provided by LoungeKeyTM'
+  ];
+  var en_acs_description = [
+    'Enjoy quality service at the airport to solve your travel problems',
+    'Make the most of your time at the airport'
   ];
   //  機場禮賓服務 acs = Airport concierge service
 
@@ -101,6 +141,10 @@
     '五星級豪華酒店',
     '五星級豪華酒店'
   ];
+  var en_har_description = [
+    'Five-star luxury hotel',
+    'Five-star luxury hotel'
+  ];
   // 飯店與渡假村 har = Hotels and resorts
 
   // 豪華租車 lcr = Luxury car rental
@@ -114,6 +158,12 @@
     '豪華轎車接送服務，全球'
   ];
   var lcr_description = [
+    '時髦的旅行方式、舒適抵達目的地'
+  ];
+  var en_lcr_title = [
+    '豪華轎車接送服務，全球'
+  ];
+  var en_lcr_description = [
     '時髦的旅行方式、舒適抵達目的地'
   ];
   // 豪華租車
@@ -130,6 +180,9 @@
   ];
   var lc_description = [
     '河船之旅'
+  ];
+  var en_lc_description = [
+    'River boat trip'
   ];
   // 豪華郵輪
 
@@ -149,6 +202,10 @@
   var wh_description = [
     '豪華旅遊',
     '跟團旅遊'
+  ];
+  var en_wh_description = [
+    'Luxury travel',
+    'Travel with group'
   ];
   // 精彩假期
 
@@ -194,6 +251,26 @@
     '我們為您提供全球的錢包保障，一旦您因遭遇扒手、入室行竊、搶劫或其它意外而遺失錢包，我們為您提供保障，讓您無後顧之憂',
     '若您的班機延誤，在全球機場皆可免費使用我們精選的貴賓室，盡情放鬆與享受。'
   ];
+  var en_ti_title = [
+    'Travel Insurance',
+    'Extended Warranty',
+    'Shopping Protection',
+    'Car Rental Damage Exemption',
+    'MasterCard Worldwide Service™',
+    'E-Commerce Protection, Global',
+    'Wallet Insurance, Global',
+    'MasterCard® Flight Delays VIP Card'
+  ];
+  var en_ti_description = [
+    'It is not fun to be sick when traveling or to find a doctor in a strange city. With the MasterCard World Card, you can rely on timely and generous compensation to help you through the stressful times.',
+    'Imagine an extended warranty when you buy a brand new phone, TV or home appliance.',
+    'As the card holder of World MasterCard World, you can shop with confidence, because you know that most of your card shopping, in case of theft or accidental damage, will be protected by shopping.',
+    'Provide global protection against the risk of theft or damage to rental cars.',
+    'Your ultimate travel companion. No matter where you are, you can get a full credit card related emergency assistance service by simply calling a toll-free number.',
+    'Despite the ease of using the Mastercard MasterCard World Card for online shopping, your online shopping process will be fully protected.',
+    'We provide you with a global wallet protection. Once you lose your wallet due to pickpockets, burglary, robbery or other accidents, we will provide you with protection and peace of mind.',
+    'If your flight is delayed, you can relax and enjoy using our selection of VIP rooms at the global airport for free.'
+  ];
   //旅遊保險 travel insurance = ti
 
   //租車服務 cr = Car Rental
@@ -208,6 +285,12 @@
   ];
   var cr_description = [
     '相關內容敬請期待。'
+  ];
+  var en_cr_title = [
+    'Stay Tuned'
+  ];
+  var en_cr_description = [
+    'Stay tuned for related content.'
   ];
   //租車服務 cr = Car Rental
 

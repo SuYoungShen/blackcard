@@ -46,12 +46,12 @@
 						<input type="hidden" name="rule" value="login">
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "帳號為必填">
+					<div class="wrap-input100 validate-input" data-validate = "<?=$ar;?>"><!-- ar = account required -->
 						<input class="input100" type="text" name="username" placeholder="<?=$username;?>">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="密碼為必填">
+					<div class="wrap-input100 validate-input" data-validate="<?=$pr;?>"><!-- pr = password required -->
 						<input class="input100" type="password" name="password" placeholder="<?=$password;?>">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>

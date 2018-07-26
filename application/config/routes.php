@@ -57,6 +57,13 @@ $route['test'] = 'blackcard/test';
 $route['update'] = 'api/update';
 $route['mail'] = 'api/mail';
 
+// 英文介面
+$route['en_login'] = 'blackcard/en_login';
+$route['en_index'] = 'blackcard/en_index';
+$route['en_logout'] = 'blackcard/en_logout';
+
+// 英文介面
+
 $route['default_controller'] = 'blackcard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

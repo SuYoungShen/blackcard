@@ -26,7 +26,9 @@ class Blackcard extends CI_Controller {
 	 }
 
 	 public function index(){
-
+		 $view_data = array(
+			 "title" => "旺旺通TCI"
+		 );
 		 if($this->session->userdata('login_status')){
 			 $id = $this->session->userdata("login_id");
 			 $where = "id=".'"'.$id.'"';
@@ -41,7 +43,14 @@ class Blackcard extends CI_Controller {
 	 public function login(){
 
 		 $view_data = array(
-			 "title" => "會員登入"
+			 "title" => "會員登入",
+			 "username" => "請輸入帳號",
+			 "ar" => "帳號必填",
+			 "password" => "請輸入密碼",
+			 "pr" => "密碼必填",
+			 "button" => "登入",
+			 "en_url" => "en_login",
+			 "lan" => "English"
 		 );
 		 if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
 			 if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){
@@ -86,4 +95,76 @@ class Blackcard extends CI_Controller {
 			 redirect("blackcard/login");
 		 }
 	 }
+// 英文版
+	 public function en_login(){
+
+		 $view_data = array(
+			 "title" => "Member Login",
+			 "username" => "Please Enter Your Account",
+			 "ar" => "Account Required",
+			 "password" => "Please Enter Your Password",
+			 "pr" => "Password Required",
+			 "button" => "Login",
+			 "en_url" => "login",
+			 "lan" => "中文"
+		 );
+		 if (!empty($this->input->post("rule")) && $this->input->post("rule") == "login") {
+			 if(!empty($this->input->post('username')) && !empty($this->input->post('password'))){
+				 $user = $this->input->post('username'); // 帳號
+				 $pwd = $this->input->post('password'); // 密碼
+
+				 if($this->blackcard_model->chk_login($user, $pwd)){ // 檢查是否有這人存在
+
+					 if($this->blackcard_model->do_login($user)){
+						 $data = array();
+
+						 $date = array('login_date', 'login_time');
+						 $where = "id ="."'".$this->session->userdata('login_id')."'";
+						 if($this->blackcard_model->updates('member', $data, $date, $where)){
+							 redirect("blackcard/en_index");
+						 }else {
+							 $view_data["code"] = 404;
+							 $view_data["msg"] = "Time update failed, please login again!!!";
+							 $this->load->view('login', $view_data);
+						 }
+					 }else {
+						 $view_data["code"] = 404;
+						 $view_data["msg"] = "Login failed, please login again!!!";
+					 }
+				 }else {
+					 $view_data["code"] = 404;
+					 $view_data["msg"] = "Account or Password Incorrect!!!";
+					 $this->load->view('login', $view_data);
+				 }
+			 }else {
+				 $view_data["code"] = 404;
+				 $view_data["msg"] = "Account or Password cannot be empty!!!";
+				 $this->load->view('login', $view_data);
+			 }
+		 }else {
+			 $this->load->view('en_login', $view_data);
+		 }
+	 }
+
+	 public function en_index(){
+	 	$view_data = array(
+	 		"title" => "WanWanTon TCI"
+	 	);
+	 	if($this->session->userdata('login_status')){
+	 		$id = $this->session->userdata("login_id");
+	 		$where = "id=".'"'.$id.'"';
+	 		$view_data["data"] = $this->blackcard_model->get_once("member", $where);
+	 		$this->load->view("en_blackcard", $view_data);
+
+	 	}else {
+	 		redirect("blackcard/login");
+	 	}
+	 }
+
+	 public function en_logout(){
+		 if($this->blackcard_model->logout()){
+			 redirect("blackcard/en_login");
+		 }
+	 }
+// 英文版
 }
